@@ -8,7 +8,7 @@ const CartRoutes=require('./routes/CartRoutes');
 const cors=require('cors');
 const OrderRoutes=require("./routes/OrderRoutes");
 
-mongoose.connect('mongodb+srv://MERN:1234@cluster0.z9kbeyv.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
+mongoose.connect(db_url).then(()=>{
     console.log("DB connected.....");
 }).catch(e=>{
  console.log("DB not connected....",e);
